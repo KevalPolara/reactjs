@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Folder Structuer
+          Learn React Components
         </a>
       </header>
     </div>
