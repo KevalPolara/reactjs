@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import City from "./containers/City";
+import Country from "./containers/Country";
+import Counter from "./containers/Counter";
+import Function from "./containers/Function";
+import Countryfun from "./containers/Countryfun";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React Components(home Work)
-        </a>
-      </header>
+    <div>
+      {/* <Country/>
+      <City text="Hello Js"/> */}
+      {/* <Counter/>
+      <Function text={{name:'keval'}} data="profile data"/> */}
+      <Countryfun/>
     </div>
+    
   );
 }
 
