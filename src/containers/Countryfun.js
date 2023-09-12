@@ -1,6 +1,7 @@
 // Function Based Components:-
 
 import React, { useState } from 'react';
+import Cityfun from './Cityfun';
 
 function Countryfun(props) {
     // Make a Hook:-
@@ -14,6 +15,7 @@ function Countryfun(props) {
             <h1>Country Components</h1>
             <h2>Country Name:{countryname}</h2>
             <button onClick={changeCountry}>changeCountry</button>
+            <Cityfun countryName={countryname}/>
         </div>
     );
 }

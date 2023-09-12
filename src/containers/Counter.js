@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 class Counter extends Component {
 
+    // Mounting thay aeni pela constructor Call thay 
+
     constructor(props) {
         super(props);
         this.state={
