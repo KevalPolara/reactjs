@@ -1,4 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+// import VariantsExample from './VariantsExample';
+import ClipLoader from "react-spinners/ClipLoader";
+
+
+const override: CSSProperties = {
+  display: "block",
+  margin: "0 auto",
+  // borderColor: "red",
+  // backgroundColor:"Yellow",
+  // color:"black"
+};
+
+
 
 const medicinedata=[
     {
@@ -60,39 +73,57 @@ const medicinedata=[
   ]
 
 function Medicine(props) {
+  const [loading,handleLoading]=useState(true);
+  const [medicineone]=useState(medicinedata);
 
-    const [medicineone]=useState(medicinedata);
+  useEffect(()=>{
+    setTimeout(()=>{
+      handleLoading(false);
+    },5000)
+  },[])
+
     return (
-        
-            <table border="1">
-              <thead>
-                <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Expiry</th>
-                <th>Description</th>
-                </tr>
-                </thead>
+      <div className='App'>
+      {
+        loading===true ?
+        <ClipLoader
+        loading={loading}
+        cssOverride={override}
+        size={30}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+        :
+        <table border="1">
+        <thead>
+          <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Expiry</th>
+          <th>Description</th>
+         </tr>
+          </thead>
 
-                {
-                    medicineone.map((v)=>{
-                      return(
-                      <tbody>
-                        <tr>
-                            <td>{v.id}</td>
-                            <td>{v.name}</td>
-                            <td>{v.price}</td>
-                            <td>{v.expiry}</td>
-                            <td>{v.desc}</td>
-                        </tr>
-                         </tbody>
-                      )
-                    })
-                   
-                }     
-            </table>
-    )
+          {
+              medicineone.map((v)=>{
+                return(
+                <tbody>
+                  <tr>
+                      <td>{v.id}</td>
+                      <td>{v.name}</td>
+                      <td>{v.price}</td>
+                      <td>{v.expiry}</td>
+                      <td>{v.desc}</td>
+                  </tr>
+                   </tbody>
+                )
+              })     
+          }     
+      </table>
+      }
+</div>
+      ) 
 }
 
 export default Medicine;

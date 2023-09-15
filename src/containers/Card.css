@@ -1,0 +1,48 @@
+.card-container{
+    width: 400px;
+    /* height: 900px; */
+    /* overflow: hidden; */
+    box-shadow: 0px 0px 15px -5px;
+    margin-bottom: 2.0rem;
+}
+
+.image-container img{
+    /* overflow: hidden; */
+    height: 200px;
+}
+
+.div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cls{
+    display: inline-block;
+}
+
+.p{
+    font-size: 20px;
+}
+.description{
+    font-size: 15px;
+}
+
+.images{
+    height: 200px;
+    text-align: center;
+}
+.spiner{
+    margin: 0 auto;
+    /* padding-top: 220px; */
+    text-align: center;
+    
+}
+
+.input{
+    text-align: center;
+    margin-bottom: 2.0rem;
+    
+}
+
+

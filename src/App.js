@@ -8,6 +8,11 @@ import Medicine from "./containers/Medicine";
 import Lifecyclemethod from "./containers/Lifecyclemethod";
 import Timer from "./containers/Timer";
 import TimerFun from "./containers/TimerFun";
+// import Quote from "./containers/Quote";
+import Product from "./containers/Product";
+import Search from "./containers/Search";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Searchdata from "./containers/Searchdata";
 
 function App() {
   return (
@@ -19,9 +24,14 @@ function App() {
       {/* <Countryfun/> */}
       {/* <Counterfun/> */}
       {/* <Medicine/> */}
+     
       {/* <Lifecyclemethod Defaultname="Krish"/> */}
       {/* <Timer/> */}
-      <TimerFun/>
+      {/* <TimerFun/> */}
+      {/* <Quote /> */}
+      {/* <Search/> */}
+      <Product/>
+      {/* <Searchdata/> */}
     </div>
     
   );
