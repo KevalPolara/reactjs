@@ -13,6 +13,7 @@ import Product from "./containers/Product";
 import Search from "./containers/Search";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Searchdata from "./containers/Searchdata";
+import Category from "./containers/Category";
 
 function App() {
   return (
@@ -30,8 +31,9 @@ function App() {
       {/* <TimerFun/> */}
       {/* <Quote /> */}
       {/* <Search/> */}
-      <Product/>
+      {/* <Product/> */}
       {/* <Searchdata/> */}
+      <Category/>
     </div>
     
   );
