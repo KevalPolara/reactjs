@@ -22,8 +22,6 @@ function Quote(props) {
    const newIndex=index-1;
 
    Setindex(newIndex);
-
-
   }
 
   const SetNext=()=>{

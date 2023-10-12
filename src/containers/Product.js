@@ -12,6 +12,8 @@ function Product(props) {
     const response = await fetch("https://type.fit/api/quotes");
 
     const data = await response.json();
+    
+
      SetData(data);
     SetIsLoading(false);
   };
@@ -34,15 +36,16 @@ function Product(props) {
   return (
    
     <div className="row">
-         <form>
-            <input type='search' placeholder='Search Here' onChange={(e)=>handleChange(e.target.value)}></input>
-          </form>
+        
 
       {
       isLoading
         ? <p>Loading...</p>
         :
-        fvdata.map((v) => {
+        <>
+        <input type='search' placeholder='Search Here' onChange={(e)=>handleChange(e.target.value)}></input>
+     
+        {fvdata.map((v) => {
 
             return (
                     <div className="col-4 border">
@@ -50,7 +53,11 @@ function Product(props) {
                       <p> Author:-{v.author}</p>
                     </div>      
             );
-          })}
+        })
+        }
+          </>
+
+      }
     </div>
   );
 }

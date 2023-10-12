@@ -14,6 +14,8 @@ import Search from "./containers/Search";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Searchdata from "./containers/Searchdata";
 import Category from "./containers/Category";
+import Reactstrap from "./containers/Reactstrap";
+import ReactRouter from "./containers/ReactRouter";
 
 function App() {
   return (
@@ -33,7 +35,9 @@ function App() {
       {/* <Search/> */}
       {/* <Product/> */}
       {/* <Searchdata/> */}
-      <Category/>
+      {/* <Category/> */}
+      <Searchdata/>
+      {/* <ReactRouter/> */}
     </div>
     
   );
