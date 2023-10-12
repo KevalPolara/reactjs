@@ -13,7 +13,6 @@ function Product(props) {
 
     const data = await response.json();
     
-
      SetData(data);
     SetIsLoading(false);
   };
@@ -24,7 +23,6 @@ function Product(props) {
     v.author.toLowerCase().includes(value.toLowerCase())
     )
     finalData(fdata);
-
   }
 
   let fvdata=search.length > 0 ? search : qdata

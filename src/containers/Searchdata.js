@@ -77,10 +77,8 @@ function Searchdata(props) {
       }
     })
   return fdata;
-   
   }
   
-
   let fvdata=setSortSearch();
 
   return (
@@ -118,7 +116,7 @@ function Searchdata(props) {
         {
           buttonsearch.map((v)=>{
             return(
-              <button style={{backgroundColor: seleactCat===v ? 'green' : ''}} onClick={()=>{setSelectCat(v,!seleactCat)}}   >{v}</button>
+              <button style={{backgroundColor: seleactCat===v ? 'green' : ''}} onClick={()=>{setSelectCat(v,!seleactCat)}}>{v}</button>
             ) 
           })
         }
